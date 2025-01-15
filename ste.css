@@ -1,0 +1,50 @@
+/* Add these styles to your CSS (st.css) for better spacing and readability */
+
+/* For general section spacing */
+section {
+    margin-bottom: 50px;
+}
+
+/* Adjust the line under the section title */
+.section-title .line {
+    width: 100px;
+    height: 4px;
+    background: #ffd936;
+    margin: 10px auto;
+}
+
+/* For About Us (Blog) Section */
+#about-us {
+    padding: 60px 0;
+}
+#about-us .about-content {
+    margin-bottom: 30px;
+}
+#about-us .about-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* Footer styling */
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;
+}
+footer .footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+footer .footer-links li {
+    list-style: none;
+}
+footer .footer-links li a {
+    color: #fff;
+    text-decoration: none;
+}
+footer p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}

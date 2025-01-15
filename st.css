@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Forum&family=Marko+One&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #536942;
+    --secondary: #ffd936;
+    --white: #efefef;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    color: var(--primary);
+}
+
+#main {
+    background-image: url("background img.jpg");
+    min-height: 70vh;
+    background-position: bottom center;
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 16px;
+    margin: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-list a {
+    color: var(--white);
+}
+
+.btn {
+    padding: 12px 20px;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-secondary {
+    border: 1px solid var(--white);
+    color: var(--white);
+}
+
+.btn-primary {
+    border: none;
+    background: var(--secondary);
+    color: var(--primary);
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    color: var(--white);
+}
+
+.main-content .main-heading {
+    font-size: 110px;
+    margin-top: -20px;
+}
+
+.main-content p {
+    max-width: 250px;
+    margin-bottom: 10px;
+}
+
+.menu-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: none;
+    width: 30px;
+}
+
+.section-title h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.section-title .line {
+    width: 150px;
+    height: 4px;
+    border: 0;
+    background: var(--secondary);
+    margin: auto;
+}
+
+.services {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap; /* Allow rows if space is insufficient */
+    gap: 20px;
+    justify-content: center; /* Center items */
+}
+
+.service {
+    width: 100%; /* Ensure the service cards span dynamically */
+    max-width: 350px; /* Set a consistent max width for the cards */
+    margin: 0 auto; /* Center the cards */
+    text-align: center; /* Align text and images within each card */
+}
+
+.service img {
+    width: 100%; /* Make sure images scale with their container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Smooth corners */
+    border: 2px solid var(--primary); /* Add a border for aesthetics */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+}
+
+.service img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* Add depth */
+}
+
+@media screen and (max-width: 520px) {
+    .menu-btn {
+        display: block;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        background: gray;
+        position: absolute;
+        top: 0;
+        right: -900px;
+        width: 80%;
+        height: 100vh;
+        padding-top: 80px;
+        transition: 0.3s ease;
+    }
+
+    .nav-list.active {
+        right: 0;
+    }
+
+    .nav-list li:not(:last-child) {
+        text-align: left;
+        width: 100%;
+        padding: 10px 30px;
+        border-bottom: 1px solid var(--white);
+    }
+}
+
+
+
+
+
+
+/* Add these styles to your CSS (st.css) for better spacing and readability */
+
+/* For general section spacing */
+section {
+    margin-bottom: 50px;
+}
+
+/* Adjust the line under the section title */
+.section-title .line {
+    width: 100px;
+    height: 4px;
+    background: #ffd936;
+    margin: 10px auto;
+}
+
+/* For About Us (Blog) Section */
+#about-us {
+    padding: 60px 0;
+}
+#about-us .about-content {
+    margin-bottom: 30px;
+}
+#about-us .about-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* Footer styling */
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;
+}
+footer .footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+footer .footer-links li {
+    list-style: none;
+}
+footer .footer-links li a {
+    color: #fff;
+    text-decoration: none;
+}
+footer p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
