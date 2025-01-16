@@ -1,11 +1,8 @@
-/* Add these styles to your CSS (st.css) for better spacing and readability */
 
-/* For general section spacing */
 section {
     margin-bottom: 50px;
 }
 
-/* Adjust the line under the section title */
 .section-title .line {
     width: 100px;
     height: 4px;
@@ -13,7 +10,6 @@ section {
     margin: 10px auto;
 }
 
-/* For About Us (Blog) Section */
 #about-us {
     padding: 60px 0;
 }
@@ -25,7 +21,6 @@ section {
     padding-left: 20px;
 }
 
-/* Footer styling */
 footer {
     background-color: #222;
     color: #fff;
