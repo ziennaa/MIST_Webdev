@@ -112,29 +112,29 @@ nav {
 .services {
     margin-top: 40px;
     display: flex;
-    flex-wrap: wrap; /* Allow rows if space is insufficient */
+    flex-wrap: wrap; 
     gap: 20px;
-    justify-content: center; /* Center items */
+    justify-content: center; 
 }
 
 .service {
-    width: 100%; /* Ensure the service cards span dynamically */
-    max-width: 350px; /* Set a consistent max width for the cards */
-    margin: 0 auto; /* Center the cards */
-    text-align: center; /* Align text and images within each card */
+    width: 100%; 
+    max-width: 350px; 
+    margin: 0 auto; 
+    text-align: center; 
 }
 
 .service img {
-    width: 100%; /* Make sure images scale with their container */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 10px; /* Smooth corners */
-    border: 2px solid var(--primary); /* Add a border for aesthetics */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+    width: 100%;
+    height: auto; 
+    border-radius: 10px;
+    border: 2px solid var(--primary); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
 
 .service img:hover {
-    transform: scale(1.05); /* Slight zoom effect on hover */
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* Add depth */
+    transform: scale(1.05); 
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); 
 }
 
 @media screen and (max-width: 520px) {
@@ -171,14 +171,12 @@ nav {
 
 
 
-/* Add these styles to your CSS (st.css) for better spacing and readability */
 
-/* For general section spacing */
 section {
     margin-bottom: 50px;
 }
 
-/* Adjust the line under the section title */
+
 .section-title .line {
     width: 100px;
     height: 4px;
@@ -186,7 +184,7 @@ section {
     margin: 10px auto;
 }
 
-/* For About Us (Blog) Section */
+
 #about-us {
     padding: 60px 0;
 }
@@ -198,7 +196,7 @@ section {
     padding-left: 20px;
 }
 
-/* Footer styling */
+
 footer {
     background-color: #222;
     color: #fff;
